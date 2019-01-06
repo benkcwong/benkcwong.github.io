@@ -102,14 +102,14 @@ disqusShortname = "yourdiscussshortname"
 
 
     [languages.pl]
-        languagename = "Français"
+        languagename = "Francais"
         title = ""
 
         [languages.pl.params]
             author = "Benjamin Wong"
             description = "le Site de Ben"
-            keywords = "blog, épidémiologiste, santé mondiale, santé publique, science des données, r, stata, python, gis"
-            info = "Épidémiologiste"
+            keywords = "blog, epidemiologiste, sante mondiale, sante publique, science des donnees, r, stata, python, gis"
+            info = "Epidemiologiste"
 
         [languages.pl.menu]
 
