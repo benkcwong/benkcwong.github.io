@@ -1,5 +1,5 @@
-baseurl = "https://github.com/benkcwong/benkcwong.github.io/"
-title = "Benjamin Wong"
+baseurl = "/"
+title = "johndoe"
 
 theme = "hugo-coder"
 
@@ -17,16 +17,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "yourdiscussshortname"
 
 [params]
-    author = "Benjamin Wong"
-    description = "Ben's Personal Blogsite"
-    keywords = "blog, epidemiologist,  global health, public health, datascience, r, stata, python, gis"
-    info = "Epidemiologist"
+    author = "John Doe"
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
+    info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
-    footercontent = "..."
+    footercontent = "Enter a text here."
 
     dateformat = "January 2, 2006"
 
-    hideCredits = true
+    hideCredits = false
     hideCopyright = false
 
     # Git Commit in Footer, uncomment the line below to enable it.
@@ -44,38 +44,39 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/benkcwong/"
+    url = "https://github.com/johndoe/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fab fa-gitlab"
+    weight = 2
+    url = "https://gitlab.com/johndoe/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
-    weight = 2
-    url = "https://twitter.com/benkcwong/"
+    weight = 3
+    url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 3
-    url = "https://www.linkedin.com/in/benckcwong/"
-[[params.social]]
-    name = "Research Gate"
-    icon = "fab fa-researchgate"
     weight = 4
-    url = "https://www.researchgate.net/profile/Benjamin_Wong5/"
+    url = "https://www.linkedin.com/in/johndoe/"
 [[params.social]]
-    name = "Google Scholar"
-    icon = "fab fa-google-plus-square"
+    name = "Medium"
+    icon = "fab fa-medium"
     weight = 5
-    url = "https://scholar.google.ca/citations?user=87cmlcIAAAAJ&hl=en"
+    url = "https://medium.com/@johndoe"
+
 
 [languages]
     [languages.en]
         languagename = "English" # The language name to be displayed in the selector.
-        title = ""
+        title = "John Doe"
 
         # You can configure the theme parameter for each language.
         [languages.en.params]
-        author = "Benjamin Wong"
-        info = "Epidemiologist"
-        description = "Ben's Personal Blogsite"
+        author = "John Doe"
+        info = "Full Stack DevOps and Magician"
+        description = "John Doe's personal website"
         keywords = "blog,developer,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
@@ -96,25 +97,25 @@ disqusShortname = "yourdiscussshortname"
         url = "/projects/"
 
         [[languages.en.menu.main]]
-        name = "Say Hi!"
+        name = "Contact me"
         weight = 5
         url = "/contact/"
 
 
     [languages.pl]
-        languagename = "Francais"
-        title = ""
+        languagename = "Polski"
+        title = "John Doe po polsku"
 
         [languages.pl.params]
-            author = "Benjamin Wong"
-            description = "le Site de Ben"
-            keywords = "blog, epidemiologiste, sante mondiale,x sante publique, science des donnees, r, stata, python, gis"
-            info = "Epidemiologiste"
+            author = "John Doe"
+            description = "Strona domowa John'a Doe"
+            keywords = "blog,developer,strona domowa"
+            info = "Full Stack DevOps i Magik"
 
         [languages.pl.menu]
 
             [[languages.pl.menu.main]]
-            name = "De Moi"
+            name = "O mnie"
             weight = 1
             url = "/pl/about/"
 
@@ -124,11 +125,11 @@ disqusShortname = "yourdiscussshortname"
             url = "/pl/posts/"
 
             [[languages.pl.menu.main]]
-            name = "Projets"  
+            name = "Projektowanie"
             weight = 3
             url = "/pl/projects/"
 
             [[languages.pl.menu.main]]
-            name = "Dis Bonjour"
+            name = "Kontakt"
             weight = 5
             url = "/pl/contact/"
