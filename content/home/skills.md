@@ -25,18 +25,42 @@ weight = 7
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = ""
   
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = ""
+
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
+  description = ""  
+
+[[feature]]
+  icon = "code"
+  icon_pack = "fas"
+  name = "Data Analysis"
+  description = ""
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "database"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "SQL"
+  description = ""
+
+[[feature]]
+  icon = "git-square"
+  icon_pack = "fab"
+  name = "Git / Bash"
+  description = ""
+
+[[feature]]
+  icon = "map-marked-alt"
+  icon_pack = "fas"
+  name = "GIS / Spatial Analysis"
+  description = ""
 
 +++
