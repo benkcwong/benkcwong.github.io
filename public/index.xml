@@ -606,9 +606,46 @@ if porridge == &amp;quot;blueberry&amp;quot;:
 
 &lt;p&gt;Block math:&lt;/p&gt;
 
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
+&lt;h2 id=&#34;getting-started-with-equations&#34;&gt;Getting started with equations&lt;/h2&gt;
+
+&lt;p&gt;We can write fractions: $\frac{2}{3}$. We can also handle things like estimated population growth rate, e.g., $\hat{\lambda}=1.02$. And, $\sqrt{4}=2$.&lt;/p&gt;
+
+&lt;p&gt;$$\alpha, \beta,  \gamma, \Gamma$$&lt;/p&gt;
+
+&lt;p&gt;$$a \pm b$$
+$$x \ge 15$$
+$$a_i \ge 0~~~\forall i$$&lt;/p&gt;
+
+&lt;h2 id=&#34;matrix&#34;&gt;Matrix&lt;/h2&gt;
+
+&lt;p&gt;$$A&lt;em&gt;{m,n} =
+ \begin{pmatrix}
+  a&lt;/em&gt;{1,1} &amp;amp; a&lt;em&gt;{1,2} &amp;amp; \cdots &amp;amp; a&lt;/em&gt;{1,n} &lt;br /&gt;
+  a&lt;em&gt;{2,1} &amp;amp; a&lt;/em&gt;{2,2} &amp;amp; \cdots &amp;amp; a&lt;em&gt;{2,n} &lt;br /&gt;
+  \vdots  &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  &lt;br /&gt;
+  a&lt;/em&gt;{m,1} &amp;amp; a&lt;em&gt;{m,2} &amp;amp; \cdots &amp;amp; a&lt;/em&gt;{m,n}
+ \end{pmatrix}$$&lt;/p&gt;
+
+&lt;h2 id=&#34;statistics&#34;&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;The binomial probability: $$f(y|N,p) = \frac{N!}{y!(N-y)!}\cdot p^y \cdot (1-p)^{N-y} = {{N}\choose{y}} \cdot p^y \cdot (1-p)^{N-y}$$&lt;/p&gt;
+
+&lt;p&gt;To calculate the &lt;strong&gt;mean&lt;/strong&gt; of \textit{n} observations of variable \textit{x}, you can use: $$\bar{x} = \frac{1}{n} \sum&lt;em&gt;{i=1}^{n}x&lt;/em&gt;{i}$$&lt;/p&gt;
+
+&lt;p&gt;Note that this equation looks quite nice above where it&amp;rsquo;s in display math mode. It is more compact but not quite as nice looking if we present it using inline mode, e.g., $\bar{x} = \frac{1}{n} \sum&lt;em&gt;{i=1}^{n}x&lt;/em&gt;{i}$.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s do the same with the equation for &lt;strong&gt;variance&lt;/strong&gt;. First the inline version, which is
+$\sigma^{2} = \frac{\sum\limits&lt;em&gt;{i=1}^{n} \left(x&lt;/em&gt;{i} - \bar{x}\right)^{2}} {n-1}$. And then the display mode version:
+$$\sigma^{2} = \frac{\sum&lt;em&gt;{i=1}^{n}
+  \left(x&lt;/em&gt;{i} - \bar{x}\right)^{2}}
+  {n-1}$$&lt;/p&gt;
+
+&lt;p&gt;Next, it&amp;rsquo;s good to look at the equation for &lt;strong&gt;covariance&lt;/strong&gt; to see how it is just a generalization of variance to two variables. An inline version of the equation is $cov&lt;em&gt;{x,y} = \frac{\sum\limits&lt;/em&gt;{i=1}^{n}{(x_i-\overline{x}) \cdot (y&lt;em&gt;i-\overline{y})} }{n-1}$. And, the display mode is: $$cov&lt;/em&gt;{x,y} = \frac{\sum\limits_{i=1}^{n}{(x_i-\overline{x}) \cdot (y_i-\overline{y})} }{n-1}$$&lt;/p&gt;
+
+&lt;p&gt;And, finally, we&amp;rsquo;ll end with the &lt;strong&gt;standard deviation&lt;/strong&gt;. Here&amp;rsquo;s the inline version, $\sigma = \sqrt{\frac{\sum\limits&lt;em&gt;{i=1}^{n} \left(x&lt;/em&gt;{i} - \bar{x}\right)^{2}} {n-1}}$. And here&amp;rsquo;s the display version.
+$$\sigma = \sqrt{\frac{\sum\limits&lt;em&gt;{i=1}^{n} \left(x&lt;/em&gt;{i} - \bar{x}\right)^{2}} {n-1}}$$&lt;/p&gt;
+
+&lt;p&gt;There are helpful online editors to help you learn code for various equations you might want to include. I have found the one at: &lt;a href=&#34;http://visualmatheditor.equatheque.net/VisualMathEditor.html&#34; target=&#34;_blank&#34;&gt;http://visualmatheditor.equatheque.net/VisualMathEditor.html&lt;/a&gt; to be very useful. You can work out the code there and then copy it over to your RMarkdown document in between dollar signs (1 or 2 on either end depending on whether you want the equation in line or in display mode).&lt;/p&gt;
 
 &lt;hr /&gt;
 

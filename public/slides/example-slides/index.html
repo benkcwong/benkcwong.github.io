@@ -146,9 +146,46 @@ if porridge == &quot;blueberry&quot;:
 
 <p>Block math:</p>
 
-<p>$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$</p>
+<h2 id="getting-started-with-equations">Getting started with equations</h2>
+
+<p>We can write fractions: $\frac{2}{3}$. We can also handle things like estimated population growth rate, e.g., $\hat{\lambda}=1.02$. And, $\sqrt{4}=2$.</p>
+
+<p>$$\alpha, \beta,  \gamma, \Gamma$$</p>
+
+<p>$$a \pm b$$
+$$x \ge 15$$
+$$a_i \ge 0~~~\forall i$$</p>
+
+<h2 id="matrix">Matrix</h2>
+
+<p>$$A<em>{m,n} =
+ \begin{pmatrix}
+  a</em>{1,1} &amp; a<em>{1,2} &amp; \cdots &amp; a</em>{1,n} <br />
+  a<em>{2,1} &amp; a</em>{2,2} &amp; \cdots &amp; a<em>{2,n} <br />
+  \vdots  &amp; \vdots  &amp; \ddots &amp; \vdots  <br />
+  a</em>{m,1} &amp; a<em>{m,2} &amp; \cdots &amp; a</em>{m,n}
+ \end{pmatrix}$$</p>
+
+<h2 id="statistics">Statistics</h2>
+
+<p>The binomial probability: $$f(y|N,p) = \frac{N!}{y!(N-y)!}\cdot p^y \cdot (1-p)^{N-y} = {{N}\choose{y}} \cdot p^y \cdot (1-p)^{N-y}$$</p>
+
+<p>To calculate the <strong>mean</strong> of \textit{n} observations of variable \textit{x}, you can use: $$\bar{x} = \frac{1}{n} \sum<em>{i=1}^{n}x</em>{i}$$</p>
+
+<p>Note that this equation looks quite nice above where it&rsquo;s in display math mode. It is more compact but not quite as nice looking if we present it using inline mode, e.g., $\bar{x} = \frac{1}{n} \sum<em>{i=1}^{n}x</em>{i}$.</p>
+
+<p>Let&rsquo;s do the same with the equation for <strong>variance</strong>. First the inline version, which is
+$\sigma^{2} = \frac{\sum\limits<em>{i=1}^{n} \left(x</em>{i} - \bar{x}\right)^{2}} {n-1}$. And then the display mode version:
+$$\sigma^{2} = \frac{\sum<em>{i=1}^{n}
+  \left(x</em>{i} - \bar{x}\right)^{2}}
+  {n-1}$$</p>
+
+<p>Next, it&rsquo;s good to look at the equation for <strong>covariance</strong> to see how it is just a generalization of variance to two variables. An inline version of the equation is $cov<em>{x,y} = \frac{\sum\limits</em>{i=1}^{n}{(x_i-\overline{x}) \cdot (y<em>i-\overline{y})} }{n-1}$. And, the display mode is: $$cov</em>{x,y} = \frac{\sum\limits_{i=1}^{n}{(x_i-\overline{x}) \cdot (y_i-\overline{y})} }{n-1}$$</p>
+
+<p>And, finally, we&rsquo;ll end with the <strong>standard deviation</strong>. Here&rsquo;s the inline version, $\sigma = \sqrt{\frac{\sum\limits<em>{i=1}^{n} \left(x</em>{i} - \bar{x}\right)^{2}} {n-1}}$. And here&rsquo;s the display version.
+$$\sigma = \sqrt{\frac{\sum\limits<em>{i=1}^{n} \left(x</em>{i} - \bar{x}\right)^{2}} {n-1}}$$</p>
+
+<p>There are helpful online editors to help you learn code for various equations you might want to include. I have found the one at: <a href="http://visualmatheditor.equatheque.net/VisualMathEditor.html" target="_blank">http://visualmatheditor.equatheque.net/VisualMathEditor.html</a> to be very useful. You can work out the code there and then copy it over to your RMarkdown document in between dollar signs (1 or 2 on either end depending on whether you want the equation in line or in display mode).</p>
 
 
     </section>
