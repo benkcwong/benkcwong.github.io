@@ -66,7 +66,7 @@ enableGitInfo = false
   email = "ben.kcwong@gmail.com"
   address = "206 Victoria Street, Toronto, ON M5B 1T8"
   office_hours = ""
-  phone = "+1 (416)-864-6060 ext. 77558"
+  phone = ""
   skype = ""
   telegram = ""
   keybase = ""  # Your keybase.io username.
@@ -141,7 +141,7 @@ enableGitInfo = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = true
+  math = false
 
   # Highlight.js options
   #   highlight
