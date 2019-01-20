@@ -20,20 +20,29 @@ date_format = "January 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-  title = "Epidemiologist (Research Coordinator)"
-  company = "St. Michael's Hospital"
-  company_url = "http://www.stmichaelshospital.com"
+  title = "Epidemiologist"
+  company = "Centre for Global Health Research"
+  company_url = "http://www.cghr.org"
   location = "Toronto"
   date_start = "2018-04-16"
   date_end = ""
   description = ""
 
 [[experience]]
+  title = "Epidemiologist"
+  company = "Centre for Urban Health Solutions"
+  company_url = "http://stmichaelshospitalresearch.ca/research-programs/urban-health-solutions/"
+  location = "Toronto"
+  date_start = "2017-05-01"
+  date_end = "2018-03-31"
+  description = ""
+  
+[[experience]]
   title = "Practicum Student"
   company = "Centre for Global Health Research"
   company_url = "http://www.cghr.org/"
   location = "Toronto"
-  date_start = "2017-01-01"
+  date_start = "2017-01-09"
   date_end = "2017-04-30"
   description = ""
 
@@ -45,7 +54,7 @@ date_format = "January 2006"
   date_start = "2016-04-01"
   date_end = "2016-08-30"
   description = ""
-  
+
 [[experience]]
   title = "Research Assistant"
   company = "University of Toronto - Faculty of Dentistry"
