@@ -27,5 +27,32 @@ date_format = "January 2006"
   date_start = "2018-04-16"
   date_end = ""
   description = ""
+
+[[experience]]
+  title = "Practicum Student"
+  company = "Centre for Global Health Research"
+  company_url = "http://www.cghr.org/"
+  location = "Toronto"
+  date_start = "2017-01-01"
+  date_end = "2017-04-30"
+  description = ""
+
+[[experience]]
+  title = "Practicum Student"
+  company = "Sudbury and District Health Unit"
+  company_url = "https://www.phsd.ca/"
+  location = "Sudbury"
+  date_start = "2016-04-01"
+  date_end = "2016-08-30"
+  description = ""
+  
+[[experience]]
+  title = "Research Assistant"
+  company = "University of Toronto - Faculty of Dentistry"
+  company_url = "https://www.dentistry.utoronto.ca/"
+  location = "Toronto"
+  date_start = "2011-05-01"
+  date_end = "2015-09-04"
+  description = ""
   
 +++

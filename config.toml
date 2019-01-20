@@ -6,14 +6,14 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://benkcwong.netlify.com/"
 
 # Title of your site
-title = "Ben's Blog"
+title = "Benjamin Wong"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; Benjamin Wong 2019"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -67,7 +67,7 @@ enableGitInfo = false
   address = "206 Victoria Street, Toronto, ON M5B 1T8"
   office_hours = ""
   phone = "+1 (416)-864-6060 ext. 77558"
-  skype = "wongbenja"
+  skype = ""
   telegram = ""
   keybase = ""  # Your keybase.io username.
 
@@ -110,7 +110,7 @@ enableGitInfo = false
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
   font = "classic"
-
+  
   # Description for social sharing and search engines. If undefined, author role is used in place.
   description = ""
 
@@ -291,12 +291,12 @@ enableGitInfo = false
     icon_pack = "fab"
     link = "https://www.linkedin.com/in/benckcwong/"
     
-  # Link to a PDF of your resume/CV from the About widget.
-  # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-  # [[params.social]]
-  #   icon = "cv"
-  #   icon_pack = "ai"
-  #   link = "files/cv.pdf"
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+#  [[params.social]]
+#    icon = "cv"
+#    icon_pack = "ai"
+#    link = "files/vitae.pdf"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -312,31 +312,32 @@ enableGitInfo = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
+  name = "Posts"
+  url = "#posts"
   weight = 2
 
 [[menu.main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Talks"
+  url = "#talk"
   weight = 3
 
 [[menu.main]]
   name = "Projects"
-  url = "#projects"
+  url = "#project"
   weight = 4
-
+  
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 5
+  weight = 6
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[menu.main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 7
+[[menu.main]]
+  name = "CV"
+  # url = "files/vitae.pdf"
+  url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  weight = 5
 
 # Search.
 [params.search]

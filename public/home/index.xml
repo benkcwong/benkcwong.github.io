@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Ben&#39;s Blog</title>
+    <title>Homes on Benjamin Wong</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Ben&#39;s Blog</description>
+    <description>Recent content in Homes on Benjamin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; Benjamin Wong 2019</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
@@ -36,7 +36,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Biography Ben is an epidemiologist at the Centre for Global Health Research at St. Michael&amp;rsquo;s Hospital. His research interests include global health, maternal and child health, and infectious disease epidemiology. His work focuses on quantifying mortality from tobacco, alcohol, and vaccine-preventable diseases in India.</description>
+      <description>About Me I am an Epidemiologist at the Centre for Global Health Research in St. Michael&amp;rsquo;s Hospital. We generate and disseminate evidence-based research that aims to quantify the major causes of premature mortality among the world&amp;rsquo;s poorest populations. Our research areas include maternal and child health, tobacco control, health policy/economics, and gender inequalities.
+This website is a (not-so-private) hideout for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills.</description>
     </item>
     
     <item>

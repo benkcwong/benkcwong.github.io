@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ben&#39;s Blog on Ben&#39;s Blog</title>
+    <title>Benjamin Wong on Benjamin Wong</title>
     <link>/</link>
-    <description>Recent content in Ben&#39;s Blog on Ben&#39;s Blog</description>
+    <description>Recent content in Benjamin Wong on Benjamin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; Benjamin Wong 2019</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -471,6 +471,16 @@ git submodule update --init --recursive
       <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
       
       <guid>/publication/person-re-id/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is keratinized mucosa indispensable to maintain peri-implant health? A systematic review of the literature</title>
+      <link>/publication/keratinized-mucosa-sr/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/keratinized-mucosa-sr/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
