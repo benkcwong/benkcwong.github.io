@@ -8,10 +8,10 @@ title = "Recent & Upcoming Talks"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 30
+weight = 40
 
 # Number of talks to list.
-count = 10
+count = 3
 
 # List format.
 #   0 = Simple
@@ -22,4 +22,3 @@ list_format = 2
 # Exclude talks that are shown in the Selected Talks widget?
 exclude_selected = false
 +++
-

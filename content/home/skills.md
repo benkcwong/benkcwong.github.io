@@ -13,24 +13,18 @@ subtitle = ""
 weight = 7
 
 # Showcase personal skills or business features.
-# 
+#
 # Add/remove as many `[[feature]]` blocks below as you like.
-# 
+#
 # Available icon packs and icons:
 # * fas - Font Awesome standard icons (see https://fontawesome.com/icons)
 # * fab - Font Awesome brand icons (see https://fontawesome.com/icons)
 # * ai - academic icons (see https://jpswalsh.github.io/academicons/)
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = ""
-  
-[[feature]]
-  icon = "python"
-  icon_pack = "fab"
-  name = "Python"
+  icon = "code"
+  icon_pack = "fas"
+  name = "Data Analysis"
   description = ""
 
 [[feature]]
@@ -40,11 +34,11 @@ weight = 7
   description = ""  
 
 [[feature]]
-  icon = "code"
+  icon = "map-marked-alt"
   icon_pack = "fas"
-  name = "Data Analysis"
+  name = "GIS / Spatial Analysis"
   description = ""
-  
+
 [[feature]]
   icon = "database"
   icon_pack = "fas"
@@ -52,15 +46,21 @@ weight = 7
   description = ""
 
 [[feature]]
-  icon = "git-square"
+  icon = "r-project"
   icon_pack = "fab"
-  name = "Git / Bash"
+  name = "R"
   description = ""
 
 [[feature]]
-  icon = "map-marked-alt"
-  icon_pack = "fas"
-  name = "GIS / Spatial Analysis"
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = ""
+
+[[feature]]
+  icon = "git-square"
+  icon_pack = "fab"
+  name = "Git / Bash"
   description = ""
 
 +++
