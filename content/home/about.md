@@ -33,10 +33,10 @@ weight = 5
 
 # About Me
 
-I am an Epidemiologist at the Centre for Global Health Research in St. Michael's Hospital. We generate and disseminate evidence-based research that aims to quantify the major causes of premature mortality among the world's poorest populations. Our research areas include maternal and child health, tobacco control, health policy/economics, and gender inequalities.
+I am an Epidemiologist at the Centre for Global Health Research in St. Michael's Hospital. We generate and disseminate evidence-based research quantifying the major causes of premature mortality among the world's poorest populations. Our research areas include maternal and child health, gender inequalities, tobacco control, and health policy/economics.
 
-This website is a (not-so-private) hideout for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills. 
+This is a (not-so-private) oasis for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills. 
 
 Feel free to say hi and thanks for stopping by!
 
-"We've been wrong about what our job is in medicine. We think our job is to ensure health and survival. But really it is larger than that. It is to enable well-being." - Atul Gawande
+"We think our job is to ensure health and survival. But really it is larger than that. It is to enable well-being." - Atul Gawande

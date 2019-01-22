@@ -36,8 +36,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>/home/about/</guid>
-      <description>About Me I am an Epidemiologist at the Centre for Global Health Research in St. Michael&amp;rsquo;s Hospital. We generate and disseminate evidence-based research that aims to quantify the major causes of premature mortality among the world&amp;rsquo;s poorest populations. Our research areas include maternal and child health, tobacco control, health policy/economics, and gender inequalities.
-This website is a (not-so-private) hideout for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills.</description>
+      <description>About Me I am an Epidemiologist at the Centre for Global Health Research in St. Michael&amp;rsquo;s Hospital. We generate and disseminate evidence-based research quantifying the major causes of premature mortality among the world&amp;rsquo;s poorest populations. Our research areas include maternal and child health, gender inequalities, tobacco control, and health policy/economics.
+This is a (not-so-private) oasis for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ This website is a (not-so-private) hideout for tinkering with quantitative analy
     </item>
     
     <item>
-      <title>Selected Publications</title>
+      <title>Publications</title>
       <link>/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
@@ -95,7 +95,7 @@ This website is a (not-so-private) hideout for tinkering with quantitative analy
     </item>
     
     <item>
-      <title>Recent Posts</title>
+      <title>Blog Posts</title>
       <link>/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
@@ -104,7 +104,7 @@ This website is a (not-so-private) hideout for tinkering with quantitative analy
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
+      <title>Talks &amp; Slide Decks</title>
       <link>/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
@@ -142,7 +142,7 @@ I am a teaching instructor for the following courses at University X:
     </item>
     
     <item>
-      <title>Contact</title>
+      <title>Let&#39;s Connect!</title>
       <link>/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       

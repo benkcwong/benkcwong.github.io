@@ -28,9 +28,9 @@ date_format = "Jan 2006"
   description = """ 
   Introduction to Computational Biostatistics with R </br>
   Numerical Computing with Python </br>
-  Relational Database Basics </br>
+  Neural Network Programming </br>
   Advanced Shell Programming </br>
-  Neural Network Programming
+  Relational Database Basics
   """
 
 +++
