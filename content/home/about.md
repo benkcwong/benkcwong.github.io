@@ -12,9 +12,10 @@ weight = 5
   interests = [
     "Epidemiology",
     "Global Health",
-    "Health Policy",
+    "Health Policy / Economics",
     "Maternal & Child Health",
     "Infectious Diseases",
+    "Data Analysis / Statistics",
     "Causal Inference"
   ]
 
@@ -35,8 +36,6 @@ weight = 5
 
 I am an Epidemiologist at the Centre for Global Health Research in St. Michael's Hospital. We generate and disseminate evidence-based research quantifying the major causes of premature mortality among the world's poorest populations. Our research areas include maternal and child health, gender inequalities, tobacco control, and health policy/economics.
 
-This is a (not-so-private) oasis for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills. 
-
-Feel free to say hi and thanks for stopping by!
+This is my (not-so-private) hideaway for tinkering with quantitative analysis methods, data viz techniques, and communicating science to a broader audience. 
 
 "We think our job is to ensure health and survival. But really it is larger than that. It is to enable well-being." - Atul Gawande
