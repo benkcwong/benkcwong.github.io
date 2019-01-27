@@ -22,15 +22,9 @@ weight = 7
 # * ai - academic icons (see https://jpswalsh.github.io/academicons/)
 
 [[feature]]
-  icon = "code"
-  icon_pack = "fas"
-  name = "Data Analysis"
-  description = ""
-
-[[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Statistics"
+  name = "Statistics / Data Analysis"
   description = ""  
 
 [[feature]]
@@ -40,21 +34,15 @@ weight = 7
   description = ""
 
 [[feature]]
-  icon = "database"
+  icon = "laptop"
+  icon_pack = "fas"
+  name = "R / Python / Stata"
+  description = ""
+
+[[feature]]
+  icon = "terminal"
   icon_pack = "fas"
   name = "SQL"
-  description = ""
-
-[[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = ""
-
-[[feature]]
-  icon = "python"
-  icon_pack = "fab"
-  name = "Python"
   description = ""
 
 [[feature]]
@@ -63,4 +51,10 @@ weight = 7
   name = "Git / Bash"
   description = ""
 
+[[feature]]
+  icon = "canadian-maple-leaf"
+  icon_pack = "fab"
+  name = "Eh?"
+  description = ""
+  
 +++
