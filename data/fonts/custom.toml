@@ -1,0 +1,15 @@
+# Font style metadata
+name = "Custom"
+
+# Optional Google font URL
+google_fonts = "Muli:400,700|Comfortaa:400,700|Open Sans:400,400italic,700|Ubuntu Mono:400,400italic,700"
+
+# Font families
+heading_font = "Muli"
+body_font = "Open Sans"
+nav_font = "Comfortaa"
+mono_font = "Ubuntu Mono"
+
+# Font size
+font_size = "21"
+font_size_small = "18"

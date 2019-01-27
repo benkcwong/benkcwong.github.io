@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Benjamin Wong</title>
+    <title>Homes on </title>
     <link>/home/</link>
-    <description>Recent content in Homes on Benjamin Wong</description>
+    <description>Recent content in Homes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Benjamin Wong 2019</copyright>
@@ -37,7 +37,7 @@
       
       <guid>/home/about/</guid>
       <description>About Me I am an Epidemiologist at the Centre for Global Health Research in St. Michael&amp;rsquo;s Hospital. We generate and disseminate evidence-based research quantifying the major causes of premature mortality among the world&amp;rsquo;s poorest populations. Our research areas include maternal and child health, gender inequalities, tobacco control, and health policy/economics.
-This is a (not-so-private) oasis for tinkering with quantitative analysis methods, experimenting with data visualization techniques, and improving my scientific communication skills.</description>
+This is my (not-so-private) hideaway for tinkering with quantitative analysis methods, data viz techniques, and communicating science to a broader audience.</description>
     </item>
     
     <item>
@@ -142,7 +142,7 @@ I am a teaching instructor for the following courses at University X:
     </item>
     
     <item>
-      <title>Let&#39;s Connect!</title>
+      <title>Contact</title>
       <link>/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       

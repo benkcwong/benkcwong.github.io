@@ -9,7 +9,7 @@
 baseurl = "https://benkcwong.netlify.com/"
 
 # Title of your site
-title = "Benjamin Wong"
+title = ""
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -70,7 +70,7 @@ enableGitInfo = false
   skype = ""
   telegram = ""
   keybase = ""  # Your keybase.io username.
-
+  
   # Enter an optional link for booking appointments (e.g. calendly.com).
   appointment_url = ""
 
@@ -103,13 +103,13 @@ enableGitInfo = false
 
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-  color_theme = "ocean"
+  color_theme = "custom"
   # Enable users to switch between day and night mode?
   day_night = true
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "classic"
+  font = "custom"
   
   # Description for social sharing and search engines. If undefined, author role is used in place.
   description = ""
