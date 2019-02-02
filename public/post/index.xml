@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Academic: the website designer for Hugo</title>
+      <title>Academic: the Website Designer for Hugo</title>
       <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
@@ -24,14 +24,13 @@ Follow our easy step by step guide to learn how to build your own free website w
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>R Markdown Reference</title>
+      <link>/post/r-rmarkdown/</link>
+      <pubDate>Fri, 03 Jul 2015 13:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/post/r-rmarkdown/</guid>
+      <description>This is an RMarkdown ‘how-to’ for me to refer to when I (inevitably) forget how to format my posts. The information below is aggregated from various source on the Web, with thanks to:
+https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.htmlObjectives1. What is RMarkdown2. Make an RMarkdown file3. Export an RMarkdown file into many file formatsWhat is R Markdown?R Markdown allows you to create documents that serve as a neat record of your analysis.</description>
     </item>
     
   </channel>

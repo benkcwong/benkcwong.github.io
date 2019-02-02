@@ -1,0 +1,586 @@
+---
+title: "R Markdown Reference"
+subtitle: Creating a neat and reproducible record of your code!
+author: ""
+date: 2015-07-03 13:00:00
+lastmod: 2019-02-02 15:00:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+output: 
+  html_document: 
+  toc: true
+---
+
+
+
+<p>This is an RMarkdown ‘how-to’ for me to refer to when I (inevitably) forget how to format my posts. The information below is aggregated from various source on the Web, with thanks to:</p>
+<ul>
+<li><a href="https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html" class="uri">https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html</a></li>
+</ul>
+<div id="objectives" class="section level3">
+<h3>Objectives</h3>
+<div id="what-is-rmarkdown" class="section level4">
+<h4>1. What is <code>RMarkdown</code></h4>
+</div>
+<div id="make-an-rmarkdown-file" class="section level4">
+<h4>2. Make an <code>RMarkdown</code> file</h4>
+</div>
+<div id="export-an-rmarkdown-file-into-many-file-formats" class="section level4">
+<h4>3. Export an <code>RMarkdown</code> file into many file formats</h4>
+<hr />
+</div>
+</div>
+<div id="what-is-r-markdown" class="section level2">
+<h2>What is R Markdown?</h2>
+<p>R Markdown allows you to create documents that serve as a neat record of your analysis. In the world of reproducible research, we want other researchers to easily understand what we did in our analysis, otherwise nobody can be certain that you analysed your data properly. You might choose to create an <code>RMarkdown</code> document as an appendix to a paper or project assignment that you are doing, upload it to an online repository such as Github, or simply to keep as a personal record so you can quickly look back at your code and see what you did. <code>RMarkdown</code> presents your code alongside its output (graphs, tables, etc.) with conventional text to explain it, a bit like a notebook.</p>
+<p><code>RMarkdown</code> uses <a href="http://www.markdowntutorial.com"><code>Markdown</code></a>. <code>Markdown</code> is a very simple ‘markup’ language which provides methods for creating documents with headers, images, links etc. from plain text files, while keeping the original plain text file easy to read. You can convert Markdown documents to many other file types like <code>.html</code> or <code>.pdf</code> to display the headers, images etc..</p>
+</div>
+<div id="download-r-markdown" class="section level2">
+<h2>Download R Markdown</h2>
+<p>To get <code>RMarkdown</code> working in RStudio, the first thing you need is the <code>rmarkdown</code> package, which you can get from <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html" target="_blank">CRAN</a> by running the following commands in R or RStudio:</p>
+<pre class="r"><code>install.packages(&quot;rmarkdown&quot;)
+library(rmarkdown)</code></pre>
+</div>
+<div id="create-an-rmarkdown-file" class="section level2">
+<h2>Create an <code>RMarkdown</code> file</h2>
+<p>To create a new <code>RMarkdown</code> file (<code>.Rmd</code>), select <code>File -&gt; New File -&gt; R Markdown...</code>_ in <code>RStudio</code>, then choose the file type you want to create. For now we will focus on a <code>.html</code> <code>Document</code>, which can be easily converted to other file types later.</p>
+<p>The newly created <code>.Rmd</code> file comes with basic instructions, but we want to create our own <code>RMarkdown</code> script, so go ahead and delete everything in the example file.</p>
+<p>Now save the <code>.Rmd</code> file to the repository you downloaded earlier <a href="https://github.com/ourcodingclub/CC-2-RMarkdown" target="_blank">from Github</a>.</p>
+<p>Now open the <code>RMarkdown_Tutorial.R</code> practice script from the repository you downloaded earlier in another tab in <code>RStudio</code> and use the instructions below to help you convert this script into a coherent <code>RMarkdown</code> document, bit by bit.</p>
+<p>If you have any of your own <code>R</code> scripts that you would like to make into an R Markdown document, you can also use those!</p>
+</div>
+<div id="the-different-parts-of-an-r-markdown-file" class="section level2">
+<h2>The different parts of an R Markdown file</h2>
+<div id="the-yaml-header" class="section level3">
+<h3>The YAML Header</h3>
+<p>At the top of any <code>RMarkdown</code> script is a <code>YAML</code> header section enclosed by <code>---</code>. By default this includes a title, author, date and the file type you want to output to. Many other options are available for different functions and formatting, see <a href="http://rmarkdown.rstudio.com/html_document_format.html" target="_blank">here for <code>.html</code> options</a> and <a href="http://rmarkdown.rstudio.com/pdf_document_format.html" target="_blank">here for <code>.pdf</code> options</a>. Rules in the header section will alter the whole document. Have a flick through quickly to familiarise yourself with the sorts of things you can alter by adding an option to the <code>YAML</code> header.</p>
+<p>Insert something like this at the top of your new <code>.Rmd</code> script:</p>
+<pre><code>---
+title: &quot;Edinburgh Biodiversity&quot;
+author: John Doe
+date: 22/Oct/2016
+output: html_document
+---</code></pre>
+<p>By default, the <code>title</code>, <code>author</code>, <code>date</code> and <code>output</code> format are printed at the top of your <code>.html</code> document. This is the minimum you should put in your header section.</p>
+<p>Now that we have our first piece of content, we can test the <code>.Rmd</code> file by compiling it to <code>.html</code>. To compile your <code>.Rmd</code> file into a <code>.html</code> document, you should press the <code>Knit</code> button in the taskbar:</p>
+<!-- <img src="{{ site.baseurl }}/img/Knit_HTML_Screenshot.jpg" alt="Img"> -->
+<p>By default, RStudio opens a separate preview window to display the output of your .Rmd file. If you want the output to be displayed in the <code>Viewer</code> window in <code>RStudio</code> (the same window where you would see plotted figures / packages / file paths), select “View in Pane” from the drop down menu that appears when you click on the <code>Knit</code> button in the taskbar, or in the <code>Settings gear icon</code> drop down menu next to the <code>Knit</code> button.</p>
+<p>A preview appears, and a <code>.html</code> file is also saved to the same folder where you saved your <code>.Rmd</code> file.</p>
+</div>
+<div id="code-chunks" class="section level3">
+<h3>Code Chunks</h3>
+<p>Below the <code>YAML</code> header is the space where you will write your code, accompanying explanation and any outputs. Code that is included in your <code>.Rmd</code> document should be enclosed by three backwards apostrophes <code>```</code> (grave accents!). These are known as code chunks and look like this:</p>
+<pre><code>
+```r
+norm &lt;- rnorm(100, mean = 0, sd = 1)
+```</code></pre>
+<p>Inside the curly brackets is a space where you can assign rules for that code chunk. The code chunk above says that the code is R code. We’ll get onto some other curly brace rules later.</p>
+<p><strong>Have a go at grabbing some code from the example R script and inserting it into a code chunk in your <code>.Rmd</code> document.</strong></p>
+<p>You can run an individual chunk of code at any time by placing your cursor inside the code chunk and selecting <code>Run -&gt; Run Current Chunk</code>:</p>
+<!-- <img src="{{ site.baseurl }}/img/run_sel.png" alt="Img"> -->
+</div>
+<div id="more-on-code-chunks" class="section level3">
+<h3>More on Code Chunks</h3>
+<p>It’s important to remember when you are creating an <code>RMarkdown</code> file that if you want to run code that refers to an object, for example:</p>
+<pre><code>
+```r
+plot(dataframe)
+```</code></pre>
+<p>you must include instructions showing what <code>dataframe</code> is, just like in a normal R script. For example:</p>
+<pre class="r"><code>A &lt;- c(&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;)
+B &lt;- c(5, 10, 15, 20)
+dataframe &lt;- data.frame(A, B)
+plot(dataframe)</code></pre>
+<p><img src="/post/r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Or if you are loading a dataframe from a <code>.csv</code> file, you must include the code in the <code>.Rmd</code>:</p>
+<pre><code>
+```r
+dataframe &lt;- read.csv(&quot;~/Desktop/Code/dataframe.csv&quot;)
+```</code></pre>
+<p>Similarly, if you are using any packages in your analysis, you will have to load them in the <code>.Rmd</code> file using <code>library()</code> as in a normal <code>R</code> script.</p>
+<pre><code>
+```r
+library(dplyr)
+```
+
+```
+## 
+## Attaching package: &#39;dplyr&#39;
+```
+
+```
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+```</code></pre>
+</div>
+<div id="hiding-code-chunks" class="section level3">
+<h3>Hiding code chunks</h3>
+<p>If you don’t want the code of a particular code chunk to appear in the final document, but still want to show the output (e.g. a plot), then you can include <code>echo = FALSE</code> in the code chunk instructions.</p>
+<pre><code>&lt;img src=&quot;r-rmarkdown_files/figure-html/unnamed-chunk-6-1.png&quot; width=&quot;672&quot; /&gt;</code></pre>
+<p>Similarly, you might want to create an object, but not include both the code and the output in the final <code>.html</code> file. To do this you can use, <code>include = FALSE</code>. Be aware though, when making reproducible research it’s often not a good idea to completely hide some part of your analysis:</p>
+<pre><code></code></pre>
+<p>In some cases, when you load packages into RStudio, various warning messages such as “Warning: package ‘dplyr’ was built under R version 3.4.4” might appear. If you do not want these warning messages to appear, you can use <code>warning = FALSE</code></p>
+<pre><code>
+```r
+library(dplyr)
+```</code></pre>
+<p><strong>REMEMBER: R Markdown doesn’t pay attention to anything you have loaded in other R scripts, you MUST load all objects and packages in the R Markdown script.</strong></p>
+</div>
+<div id="more-code-chunk-instructions" class="section level3">
+<h3>More Code Chunk Instructions</h3>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+<tr>
+<pre><code>&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Rule&lt;/b&gt;&lt;/th&gt;
+&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Example&lt;/b&gt;&lt;br&gt;(default)&lt;/th&gt;
+&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Function&lt;/b&gt;&lt;/th&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;eval&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;eval=TRUE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Is the code run and the results included in the output?&lt;/td&gt;</code></pre>
+</tr>
+<pre><code>&lt;tr&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;include&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;include=TRUE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Are the code and the results included in the output?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;echo&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;echo=TRUE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Is the code displayed alongside the results?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;warning&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;warning=TRUE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Are warning messages displayed?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;error&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;error=FALSE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Are error messages displayed?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;message&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;message=TRUE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Are messages displayed?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;tidy&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;tidy=FALSE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Is the code reformatted to make it look &quot;tidy&quot;?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;results&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;results=&quot;markup&quot;&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;&lt;b&gt; How are results treated? &lt;/b&gt; &lt;br&gt; &quot;hide&quot; = no results &lt;br&gt;&quot;asis&quot; = results without formatting &lt;br&gt;&quot;hold&quot; = results only compiled at end of chunk (use if many commands act on one object)&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;cache&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;cache=FALSE&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Are the results cached for future renders?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;comment&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;comment=&quot;##&quot;&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;What character are comments prefaced with?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;fig.width, fig.height&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;fig.width=7&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;What width/height (in inches) are the plots?&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;fig.align&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;fig.align=&quot;left&quot;&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;&quot;left&quot; &quot;right&quot; &quot;center&quot;&lt;/td&gt;</code></pre>
+</tr>
+</table>
+</div>
+</div>
+<div id="inserting-figures" class="section level2">
+<h2>Inserting Figures</h2>
+<p>Inserting a graph into <code>RMarkdown</code> is easy, the more energy-demanding aspect might be adjusting the formatting.</p>
+<p>By default, <code>RMarkdown</code> will place graphs by maximising their height, while keeping them within the margins of the page and maintaining aspect ratio. If you have a particularly tall figure, this can mean a really huge graph. In the following example we modify the dimensions of the figure we created above. To manually set the figure dimensions, you can insert an instruction into the curly braces:</p>
+<pre><code>
+```r
+A &lt;- c(&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;)
+B &lt;- c(5, 10, 15, 20)
+dataframe &lt;- data.frame(A, B)
+plot(dataframe)
+```
+
+&lt;img src=&quot;r-rmarkdown_files/figure-html/unnamed-chunk-9-1.png&quot; width=&quot;384&quot; /&gt;</code></pre>
+</div>
+<div id="inserting-tables" class="section level2">
+<h2>Inserting Tables</h2>
+<div id="standard-r-markdown" class="section level3">
+<h3>Standard R Markdown</h3>
+<p>While R Markdown can print the contents of a data frame easily by enclosing the name of the data frame in a code chunk:</p>
+<pre><code>
+```r
+dataframe
+```
+
+```
+##   A  B
+## 1 a  5
+## 2 a 10
+## 3 b 15
+## 4 b 20
+```</code></pre>
+<p>this can look a bit messy, especially with data frames with a lot of columns. Including a formal table requires more effort.</p>
+</div>
+<div id="kable-function-from-knitr-package" class="section level3">
+<h3>kable() function from knitr package</h3>
+<p>The most aesthetically pleasing and simple table formatting function I have found is <code>kable()</code> in the <code>knitr</code> package. The first argument tells kable to make a table out of the object <code>dataframe</code> and that numbers should have two significant figures. Remember to load the <code>knitr</code> package in your <code>.Rmd</code> file as well.</p>
+<pre><code>
+```r
+library(knitr)
+kable(dataframe, digits = 2)
+```
+
+
+
+A      B
+---  ---
+a      5
+a     10
+b     15
+b     20</code></pre>
+</div>
+<div id="pander-function-from-pander-package" class="section level3">
+<h3>pander function from pander package</h3>
+<p>If you want a bit more control over the content of your table you can use <code>pander()</code> in the <code>pander</code> package. Imagine I want the 3rd column to appear in italics:</p>
+<pre><code>
+```r
+library(pander)
+plant &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
+temperature &lt;- c(20, 20, 20)
+growth &lt;- c(0.65, 0.95, 0.15)
+dataframe &lt;- data.frame(plant, temperature, growth)
+emphasize.italics.cols(3)   # Make the 3rd column italics
+pander(dataframe)           # Create the table
+```
+
+
+------------------------------
+ plant   temperature   growth 
+------- ------------- --------
+   a         20        *0.65* 
+
+   b         20        *0.95* 
+
+   c         20        *0.15* 
+------------------------------</code></pre>
+<p>Find more info on pander <a href="https://cran.r-project.org/web/packages/pander/pander.pdf" target="_blank">here</a>.</p>
+</div>
+<div id="manually-creating-tables-using-markdown-syntax" class="section level3">
+<h3>Manually creating tables using markdown syntax</h3>
+<p>You can also manually create small tables using markdown syntax.</p>
+<p>For example:</p>
+<pre><code>| Plant | Temp. | Growth |
+|:------|:-----:|-------:|
+| A     | 20    | 0.65   |
+| B     | 20    | 0.95   |
+| C     | 20    | 0.15   |</code></pre>
+<p>will create something that looks like this:</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+<tr>
+<pre><code>&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Plant&lt;/b&gt;&lt;/th&gt;
+&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Temp.&lt;/b&gt;&lt;/th&gt;
+&lt;th class=&quot;tg-yw4l&quot;&gt;&lt;b&gt;Growth&lt;/b&gt;&lt;/th&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;A&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;20&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;0.65&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;B&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;20&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;0.95&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;C&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;20&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;0.15&lt;/td&gt;</code></pre>
+</tr>
+</table>
+<p>The <code>:-----:</code> tells markdown that the line above should be treated as a header and the lines below should be treated as the body of the table. Text alignment of the columns is set by the position of <code>:</code>:</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+<tr>
+<th class="tg-yw4l">
+<b>Syntax</b>
+</th>
+<th class="tg-yw4l">
+<b>Alignment</b>
+</th>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;`:----:`&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Centre&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;`:-----`&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Left&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;`-----:`&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Right&lt;/td&gt;</code></pre>
+</tr>
+<tr>
+<pre><code>&lt;td class=&quot;tg-yw4l&quot;&gt;`------`&lt;/td&gt;
+&lt;td class=&quot;tg-yw4l&quot;&gt;Auto&lt;/td&gt;</code></pre>
+</tr>
+</table>
+</div>
+<div id="creating-tables-from-model-outputs" class="section level3">
+<h3>Creating tables from model outputs</h3>
+<p>Using <code>tidy()</code> from the package <code>broom</code>, we are able to create tables of our model outputs, and insert these tables into our markdown file. The example below shows a simple example linear model, where the summary output table can be saved as a new R object and then added into the markdown file.</p>
+<pre><code>
+```r
+library(broom)
+A &lt;- c(20, 15, 10)
+B &lt;- c(1, 2, 3)
+
+lm_test &lt;- lm(A ~ B)            # Creating linear model 
+summary(lm_test)                # Obtaining linear model summary statistics
+```
+
+```
+## Warning in summary.lm(lm_test): essentially perfect fit: summary may be
+## unreliable
+```
+
+```
+## 
+## Call:
+## lm(formula = A ~ B)
+## 
+## Residuals:
+##          1          2          3 
+##  1.088e-15 -2.176e-15  1.088e-15 
+## 
+## Coefficients:
+##               Estimate Std. Error    t value Pr(&gt;|t|)    
+## (Intercept)  2.500e+01  4.070e-15  6.142e+15  &lt; 2e-16 ***
+## B           -5.000e+00  1.884e-15 -2.654e+15  2.4e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2.665e-15 on 1 degrees of freedom
+## Multiple R-squared:      1,  Adjusted R-squared:      1 
+## F-statistic: 7.043e+30 on 1 and 1 DF,  p-value: 2.399e-16
+```
+
+```r
+table_obj &lt;- tidy(lm_test)      # Using tidy() to create a new R object called table 
+```
+
+```
+## Warning in summary.lm(x): essentially perfect fit: summary may be
+## unreliable
+```
+
+```r
+pander(table_obj, digits = 3)   # Using pander() to view the created table, with 3 sig figs  
+```
+
+
+-----------------------------------------------------------
+    term       estimate   std.error   statistic   p.value  
+------------- ---------- ----------- ----------- ----------
+ (Intercept)      25      4.07e-15    6.14e+15    1.04e-16 
+
+      B           -5      1.88e-15    -2.65e+15   2.4e-16  
+-----------------------------------------------------------</code></pre>
+</div>
+</div>
+<div id="formatting-text" class="section level2">
+<h2>Formatting Text</h2>
+<p>Markdown syntax can be used to change how text appears in your output file. Here are a few common formatting commands:</p>
+<p><code>*Italic*</code></p>
+<p><em>Italic</em></p>
+<hr>
+<p><code>**Bold**</code></p>
+<p><strong>Bold</strong></p>
+<hr>
+<p>This is `code` in text</p>
+<p>This is <code>code</code> in text</p>
+<hr>
+<p><code># Header 1</code></p>
+</div>
+<div id="header-1" class="section level1">
+<h1>Header 1</h1>
+<hr>
+<p><code>## Header 2</code></p>
+<div id="header-2" class="section level2">
+<h2>Header 2</h2>
+<p>Note that when a <code>#</code> symbol is placed inside a code chunk it acts as a normal R comment, but when placed in text it controls the header size.</p>
+<hr>
+<p><code>* Unordered list item</code></p>
+<li>
+Unordered list item
+</li>
+<hr>
+<p><code>1. Ordered list item</code></p>
+<ol style="list-style-type: decimal">
+<li>Ordered list item</li>
+</ol>
+<hr>
+<p><code>[Link](https://www.google.com)</code></p>
+<p><a href="https://www.google.com">Link</a></p>
+<hr>
+<p><code>$A = \pi \times r^{2}$</code></p>
+<!-- <img src="{{ site.baseurl }}/img/Inline_eq_ex.png" alt="Img" style="width:175px"> -->
+<p>The <code>$</code> symbols tell R markdown to use <a href="http://reu.dimacs.rutgers.edu/Symbols.pdf" target="_blank">LaTeX equation syntax</a>.</p>
+</div>
+<div id="creating-.pdf-files-in-rmarkdown" class="section level2">
+<h2>Creating <code>.pdf</code> files in Rmarkdown</h2>
+<p>Creating <code>.pdf</code> documents for printing in A4 requires a bit more fiddling around. RStudio uses another document compiling system called <a href="https://www.latex-project.org/" target="_blank">LaTeX</a> to make <code>.pdf</code> documents.</p>
+<p>If you are using Windows, go to <a href="https://miktex.org/download" target="_blank">MikTeX</a> and download the appropriate “Complete MikTeX Installer” for your system, either 32-bit or 64-bit.</p>
+<p>If you are using a Mac, go to <a href="https://tug.org/mactex/mactex-download.html" target="_blank">MacTeX</a> and download the “MacTeX.pkg”.</p>
+<p>Running these installers will install a version of LaTeX onto your system, which R will then be able to call on to compile the <code>.pdf</code>.</p>
+<p>Becoming familiar with <a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank">LaTeX syntax</a> will give you a lot more options to make your R Markdown <code>.pdf</code> look pretty, as LaTeX commands are mostly compatible with R Markdown, though some googling is often required.</p>
+<p>To compile a <code>.pdf</code> instead of a <code>.html</code> document, change <code>output:</code> from <code>html_document</code> to <code>pdf_document</code>.</p>
+</div>
+<div id="common-problems-when-compiling-a-.pdf" class="section level2">
+<h2>Common problems when compiling a <code>.pdf</code></h2>
+<ul>
+<li>Text is running off the page</li>
+</ul>
+<p>Add a <code>global_options</code> argument at the start of your <code>.Rmd</code> file:</p>
+<pre><code></code></pre>
+<p>This code chunk won’t be displayed in the final document due to the <code>include = FALSE</code> call and should be placed immediately after the YAML header to affect everything below that.</p>
+<p><code>tidy.opts = list(width.cutoff = 60)</code> defines the margin cutoff point and wraps text to the next line. Play with the value to get it right.</p>
+<ul>
+<li>I lose my syntax highlighting</li>
+</ul>
+<p>Use the <code>xelatex</code> engine to compile your <code>.pdf</code>:</p>
+<pre><code>- - -
+author: John Doe
+output: pdf_document 
+latex_engine: xelatex
+- - -</code></pre>
+<p>By default, R markdown uses the base LaTeX engine to compile pdfs, but this may limit certain options when it comes to formatting. There are lots of other engines to play around with as well.</p>
+<hr>
+<ul>
+<li>My page margins are too big/small</li>
+</ul>
+<p>Add a <code>geometry</code> argument to the YAML header</p>
+<pre><code>- - - 
+title: &quot;R Markdown Tutorial Demo&quot;
+author: &quot;John Godlee&quot;
+date: &quot;30/11/2016&quot;
+output: pdf_document
+latex_engine: xelatex
+geometry: left = 0.5cm, right = 1cm, top = 1cm, bottom = 1cm
+- - - </code></pre>
+<p><code>geometry</code> is a LaTeX command.</p>
+<hr>
+<ul>
+<li>My plot/table/code is split over two pages</li>
+</ul>
+<p>Add a page break before the dodgy element:</p>
+<pre><code>\pagebreak
+
+```r
+print(&quot;Code Here&quot;)
+```
+
+```
+## [1] &quot;Code Here&quot;
+```</code></pre>
+<hr>
+<ul>
+<li>I want to change the font</li>
+</ul>
+<p>Add a font argument to your header section</p>
+<pre><code>--- 
+title: &quot;R Markdown Tutorial Demo&quot;
+author: &quot;John Godlee&quot;
+date: &quot;30/11/2016&quot;
+output: pdf_document
+latex_engine: xelatex
+mainfont: Arial
+--- </code></pre>
+<p><code>mainfont</code> is a LaTeX command.</p>
+</div>
+<div id="have-a-go-yourself" class="section level2">
+<h2>Have a go yourself</h2>
+<p>At this point, if you haven’t been following through already, have a go at converting the tutorial R script (<code>RMarkdown_Tutorial.R</code>) into a <code>.Rmd</code> document using the information above as a guide.</p>
+<p>Remember that a good R markdown document should provide a reproducible log of your code, properly commented, with subtitles, comments and code relevant output so the reader knows what is going on.</p>
+<p><a name="notebook"></a></p>
+</div>
+<div id="r-notebooks" class="section level2">
+<h2><code>R</code> Notebooks</h2>
+<p><code>RMarkdown</code> outputs to a non-interactive file format like <code>.html</code> or <code>.pdf</code>. When presenting your code, this means you have to make a choice, do you want interactive but messy looking code (<code>.Rmd</code>) or non-interactive but neat looking code (<code>.html</code>, <code>.pdf</code>)? R notebooks provide a file format that combines the interactivity of a <code>.Rmd</code> file with the attractiveness of <code>.html</code> output.</p>
+<p>R notebooks output to the imaginatively named <code>.nb.html</code> format. <code>.nb.html</code> files can be loaded into a web browser to see the output, or loaded into a code editor like RStudio to see the code. You are able to interactively select which code chunks to hide or show code chunks.</p>
+<p>Notebooks use the same syntax as <code>.Rmd</code> files so it is easy to copy and paste the script from a <code>.Rmd</code> into a Notebook. To create a new R Notebook file, select <code>File -&gt; New File -&gt; R Notebook</code>. Create a notebook from your newly created <code>.Rmd</code> file by copying and pasting the script. If you choose to copy and paste the script, make sure that under your YAML header, output: html_notebook instead of output: html_document.</p>
+<p>Alternatively, to turn any existing <code>.Rmd</code> file into an <code>R</code> notebook, add <code>html_notebook: default</code> under the <code>output:</code> argument in the YAML header. It’s okay if you have more than one output type. For example, this code would give you a <code>pdf</code> and an `R notebook.</p>
+<pre><code>--- 
+title: &quot;R Markdown Tutorial Demo&quot;
+author: &quot;John Godlee&quot;
+date: &quot;30/11/2016&quot;
+output:
+pdf_document: default
+latex_engine: xelatex
+mainfont: Arial
+html_notebook: default
+--- </code></pre>
+<p>To output to <code>.nb.html</code>, first make sure all your code chunks have been run:</p>
+<p><img src="{{ site.baseurl }}/img/Notebook_Run.jpg" alt="Img"></p>
+<p>then click <em>Preview</em>:</p>
+<p><img src="{{ site.baseurl }}/img/Notebook_Preview.jpg" alt="Img"></p>
+<p>Notice that with R Notebooks you can still output to <code>.html</code> or <code>.pdf</code>, the same as a <code>.Rmd</code> file.</p>
+<p>R notebooks have only been around for about a couple of years so they’re not perfect yet, but may replace R markdown in the future for many applications.</p>
+<div id="difference-between-rmarkdown-and-rnotebooks" class="section level3">
+<h3>Difference between RMarkdown and RNotebooks</h3>
+<div id="executing-commands-1-line-at-a-time" class="section level4">
+<h4>Executing commands 1 line at a time</h4>
+<p>The first difference between R Markdown and R Notebooks is in the execution of chunks. For R Markdown, when a chunk is executed, all the code is sent to the console at once. But in an R Notebook, only one line at a time is sent. This allows execution to stop if a line raises an error in R Noteboks.</p>
+</div>
+<div id="preview-in-r-notebooks-vs-knit-in-r-markdown" class="section level4">
+<h4>Preview in R Notebooks vs Knit in R Markdown</h4>
+<p>R Markdown documents are ‘knitted’, while R Notebooks are ‘previewed’.</p>
+<p>Although the notebook preview looks similar to the knitted markdown document, the notebook preview does not execute any code chunks, but only shows you a rendered copy of the Markdown output of your document along with the most recent chunk output. The preview is also generated automatically whenever the notebook is saved. This would be especially useful if we have the preview showing in the Viewer window next to the console. <strong>This means that in R Notebooks, we are able to visually assess the output as we develop the document without having to knit the whole document again.</strong></p>
+<p>For example, with the following code chunk example (from the <code>RMarkdown_Tutorial.R</code> practice script), we are creating a table of species richness for each taxonomic group.</p>
+<pre><code>
+```r
+richness &lt;- 
+  edidiv %&gt;%
+  group_by(taxonGroup) %&gt;%
+  summarise(Species_richness = n_distinct(taxonName))
+```</code></pre>
+<p>To bring up the table output, we can add <code>richness</code>, <code>pander(richness)</code>, <code>kable(richness)</code> to the end of that code chunk. If we had initially forgotten to add in either one of those functions, the table would not have been produced in both the knitted markdown document and the notebook preview. Imagine that we are now editing the R Markdown document / R Notebook document to include this function to bring up the table in the outputted document.</p>
+<p>For RMarkdown: we would type in <code>pander(richness)</code>, run that specific code chunk, and then have to click the Knit button in the taskbar to knit the whole document again.</p>
+<p>For R Notebooks, we type in <code>pander(richness)</code>, run that specific code chunk, and save the document, and the preview in the Viewer window would be updated on its own - there is no need to click the Preview button in the taskbar and run the code for the whole document.</p>
+</div>
+</div>
+</div>
+</div>
