@@ -2,11 +2,11 @@
 name = "Custom"
 
 # Optional Google font URL
-google_fonts = "Muli:400,700|Comfortaa:400,700|Open Sans:400,400italic,700|Ubuntu Mono:400,400italic,700"
+google_fonts = "Raleway:400,700|Fira Sans:400,700|Lato:400,700|Comfortaa:400,700|Open Sans:400,400italic,700|Ubuntu:400,700|Ubuntu Mono:400,400italic,700|Source Sans Pro:400,700"
 
 # Font families
-heading_font = "Muli"
-body_font = "Open Sans"
+heading_font = "Raleway"
+body_font = "Lato"
 nav_font = "Comfortaa"
 mono_font = "Ubuntu Mono"
 
