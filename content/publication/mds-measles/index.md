@@ -1,10 +1,10 @@
 +++
-title = "Is keratinized mucosa indispensable to maintain peri-implant health? A systematic review of the literature"
-date = 2015-09-01T00:00:00
+title = "The impact of measles immunization campaigns in India using a nationally representative sample of 27,000 child deaths"
+date = 2019-09-15T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["GA Cushen"]`.
-authors = ["Brito C", "Tenenbaum HC", "Wong BK", "Schmitt C", "Nogueira-Filho G"]
+authors = ["Wong BKC", "Fadel SA", "Awasthi S", "Khera A", "Kumar R", "Menon G", "Jha P"]
 
 # Publication type.
 # Legend:
@@ -18,15 +18,15 @@ authors = ["Brito C", "Tenenbaum HC", "Wong BK", "Schmitt C", "Nogueira-Filho G"
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "In *Journal of Biomedical Materials Research Part B Applied Biomaterials*."
-publication_short = "In *J Biomed Mater Res B Appl Biomater*"
+publication = "In *eLife*."
+publication_short = "In *eLife*"
 
 # Abstract and optional shortened version.
-abstract = "The significance of keratinized mucosa (KM) around dental implants is still not well explained and has been controversial. The aim of this systematic review was to evaluate the importance of KM around dental implants. The electronic databases Cochrane library, MEDLINE, EMBASE, and Virtual Health Library (VHL) databases were utilized to search original articles from 2006 to March 2013. The inclusion and exclusion criteria used to select the articles were: (1) Human studies published in the English language; (2) Study published in international peer‐viewed journals; (3) Studies evaluated the association between KM width and the peri‐implant tissue health; (4) Studies that have follow up of greater than 12 months; (5) Publication of studies not older than 10 years. The searches retrieved 285 citations. Seven articles fulfilled all of the inclusion criteria. Out of these, three studies were ranked as presenting high methodological quality, and four were judged to be of moderate quality. This systematic review concludes that the presence of an adequate zone of keratinized tissue may be necessary because it was shown to be related to better peri‐implant tissue health. Further randomized controlled trials are necessary to support this statement."
+abstract = "India comprises much of the persisting global childhood measles mortality. India implemented a mass second-dose  measles immunization campaign in 2010. We used interrupted time series and multilevel regression to quantify the campaign’s impact on measles mortality using the nationally representative Million Death Study (including 27,000 child deaths in 1.3  million households surveyed from 2005–2013). 1–59-month measles mortality rates fell significantly more in the campaign states  following launch (27%) versus non-campaign states (11%). Declines were steeper, with steeper declines in girls  than boys and were specific to measles deaths. The campaign did not contribute to any additional declines in mortality from measles in non-campaign states or from pneumonia or diarrhoea. Measles mortality risk was lower for children living in a campaign district (OR 0.6, 99% CI 0.4–0.8) or born in 2009 or later (OR 0.8, 99% CI 0.7–0.9). The campaign averted up to 41,000–56,000 deaths during 2010–13, or 39%–57% of the expected deaths nationally. Elimination of measles deaths in India is feasible."
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -49,7 +49,7 @@ slides = ""
 tags = []
 
 # Links (optional).
-url_pdf = "https://doi.org/10.1002/jbm.b.33042"
+url_pdf = ""
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -79,5 +79,3 @@ math = true
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

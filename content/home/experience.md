@@ -47,6 +47,15 @@ date_format = "January 2006"
   description = ""
 
 [[experience]]
+  title = "Junior Epidemiologist"
+  company = "Centre for Urban Health Solutions"
+  company_url = "http://stmichaelshospitalresearch.ca/research-programs/urban-health-solutions/"
+  location = "Toronto"
+  date_start = "2016-09-01"
+  date_end = "2016-12-31"
+  description = ""
+
+[[experience]]
   title = "Practicum Student"
   company = "Sudbury and District Health Unit"
   company_url = "https://www.phsd.ca/"
