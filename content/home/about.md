@@ -37,6 +37,7 @@ I am an Epidemiologist at the Centre for Global Health Research in St. Michael's
 
 This is my (not-so-private) hideaway for tinkering with data analysis and visualization, as well as communicating science to a broader audience.
 
-The site is still a work in progress but I would love to connect with you either here or through Twitter! Follow me at @benkcwong (link in the sidebar).
+The site is a work in progress but I would love to connect with you! 
+Follow me on Twitter at @benkcwong (link in the sidebar).
 
 "We think our job is to ensure health and survival. But really it is larger than that. It is to enable well-being." - Atul Gawande
