@@ -49,7 +49,7 @@ slides = ""
 tags = []
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "http://cghr.org"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
