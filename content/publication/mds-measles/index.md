@@ -1,6 +1,6 @@
 +++
 title = "The impact of measles immunization campaigns in India using a nationally representative sample of 27,000 child deaths"
-date = 2019-09-15T00:00:00
+date = 2019-02-14T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["GA Cushen"]`.
