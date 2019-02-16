@@ -26,7 +26,7 @@ abstract = "The significance of keratinized mucosa (KM) around dental implants i
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -79,5 +79,3 @@ math = true
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
