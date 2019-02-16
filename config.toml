@@ -64,7 +64,7 @@ enableGitInfo = false
 
   # Details for the Contact Widget
   email = "ben.kcwong@gmail.com"
-  address = "206 Victoria Street, Toronto, ON M5B 1T8"
+  address = "209 Victoria Street, Toronto, ON M5B 1T8"
   office_hours = ""
   phone = ""
   skype = ""
@@ -230,7 +230,7 @@ enableGitInfo = false
     #   2 = APA
     #   3 = MLA
     #   4 = Stream
-    publication_format = 4
+    publication_format = 0
 
     # Talk list format.
     #   0 = Simple

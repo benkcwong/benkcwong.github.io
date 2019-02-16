@@ -26,7 +26,7 @@ abstract = "India comprises much of the persisting global childhood measles mort
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
