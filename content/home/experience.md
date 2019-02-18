@@ -36,15 +36,6 @@ date_format = "January 2006"
   date_start = "2017-05-01"
   date_end = "2018-03-31"
   description = ""
-  
-[[experience]]
-  title = "Practicum Student"
-  company = "Centre for Global Health Research"
-  company_url = "http://www.cghr.org/"
-  location = "Toronto"
-  date_start = "2017-01-09"
-  date_end = "2017-04-30"
-  description = ""
 
 [[experience]]
   title = "Junior Epidemiologist"
@@ -53,15 +44,6 @@ date_format = "January 2006"
   location = "Toronto"
   date_start = "2016-09-01"
   date_end = "2016-12-31"
-  description = ""
-
-[[experience]]
-  title = "Practicum Student"
-  company = "Sudbury and District Health Unit"
-  company_url = "https://www.phsd.ca/"
-  location = "Sudbury"
-  date_start = "2016-04-01"
-  date_end = "2016-08-30"
   description = ""
 
 [[experience]]

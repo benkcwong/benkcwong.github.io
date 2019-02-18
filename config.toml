@@ -267,11 +267,6 @@ enableGitInfo = false
     link = "https://twitter.com/benkcwong"
   
   [[params.social]]
-    icon = "github"
-    icon_pack = "fab"
-    link = "https://github.com/benkcwong"
-    
-  [[params.social]]
     icon = "orcid"
     icon_pack = "ai"
     link = "https://orcid.org/0000-0002-7745-6271"
@@ -280,7 +275,12 @@ enableGitInfo = false
       icon = "linkedin-in"
       icon_pack = "fab"
       link = "https://www.linkedin.com/in/benckcwong/"
-      
+  
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fab"
+    link = "https://github.com/benkcwong"
+    
   [[params.social]]
     icon = "goodreads"
     icon_pack = "fab"
