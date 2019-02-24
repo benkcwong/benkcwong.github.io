@@ -1,7 +1,7 @@
 +++
 title = "The impact of measles immunization campaigns in India using a nationally representative sample of 27,000 child deaths"
-date = 2019-02-14T00:00:00
-draft = false
+date = 2019-04-14T00:00:00
+draft = true
 
 # Authors. Comma separated list, e.g. `["GA Cushen"]`.
 authors = ["Wong BKC", "Fadel SA", "Awasthi S", "Khera A", "Kumar R", "Menon G", "Jha P"]
@@ -26,7 +26,7 @@ abstract = "India comprises much of the persisting global childhood measles mort
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
