@@ -1,6 +1,6 @@
 +++
 title = "The impact of measles immunization campaigns in India using a nationally representative sample of 27,000 child deaths"
-date = 2019-04-05T00:00:00
+date = 2019-03-05T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["GA Cushen"]`.
@@ -49,11 +49,11 @@ slides = ""
 tags = []
 
 # Links (optional).
-url_pdf = "http://cghr.org"
+url_pdf = "https://elifesciences.org/articles/43290"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
-url_project = ""
+url_project = "http://www.cghr.org/measles"
 url_slides = ""
 url_video = ""
 url_poster = ""
