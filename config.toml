@@ -325,8 +325,8 @@ enableGitInfo = false
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[menu.main]]
   name = "CV"
-  # url = "files/vitae.pdf"
-  url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  url = "files/BenjaminWong_CV.pdf"
+  # url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   weight = 5
 
 # Search.
@@ -337,13 +337,13 @@ enableGitInfo = false
   #   2: Algolia (https://www.algolia.com)
   engine = 1
 
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [params.search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
+# Configuration of Algolia search engine.
+# Paste the values from your Algolia dashboard.
+[params.search.algolia]
+  app_id = ""
+  api_key = ""
+  index_name = ""
+  show_logo = false
 
 # Taxonomies.
 [taxonomies]
