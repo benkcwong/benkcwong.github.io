@@ -21,7 +21,7 @@ weight = 5
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "MPH in Epidemiology"
-  institution = "University of Toronto"
+  institution = "Dalla Lana School of Public Health, University of Toronto"
   year = 2017
 
 [[education.courses]]
@@ -33,10 +33,10 @@ weight = 5
 
 # About Me
 
-I am an Epidemiologist at the Centre for Global Health Research in St. Michael's Hospital. We generate and disseminate evidence-based research quantifying the major causes of premature mortality among the world's poorest populations. Our research areas include maternal and child health, gender inequalities, tobacco control, and health policy/economics.
+I am a global health epidemiologist with training in public health, biostatistics, and experimental design. I am interested in using data to generate reliable evidence that improves decision-making, health system performance, and population health in low- and middle-income settings. My current work focuses on using data science to understand trends in maternal and child health, vaccine-preventable diseases, HIV/AIDS, and tobacco/alcohol control. 
 
-This is my (not-so-private) hideaway for tinkering with data analysis and visualization, as well as communicating science to a broader audience.
+I like data analysis, cool visualizations, guitar, coffee (lots!) and communicating science to a broader audience.
 
-I'd love to hear from you! Reach me through e-mail or follow me on Twitter (links in the sidebar).
+Follow me on Twitter (links in the sidebar).
 
 "We think our job is to ensure health and survival. But really it is larger than that. It is to enable well-being." - Atul Gawande
